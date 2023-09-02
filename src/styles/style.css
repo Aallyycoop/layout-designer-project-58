@@ -1,7 +1,50 @@
 /** CSS STYLE **/
 
-.hello {
-  display: block;
+:root {
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
 
-  color: #fff;
+@font-face {
+  font-family: OpenSans, sans-serif;
+  src: url(src/fonts/OpenSans-Regular.ttf);
+  font-size: 16px;
+  line-height: 1.6rem;
+  color: var(--dark)
+}
+
+@font-face {
+  font-family: Neucha, sans-serif;
+  src: url(src/fonts/Neucha-Regular.ttf);
+  font-size: 16px;
+  line-height: 1.6rem;
+  color: var(--dark)
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 34px;
+  line-height: 1.2em;
+}
+
+section {
+  max-width: 1110px;
+  padding: 100px 0;
+  margin: 0 auto;
 }
