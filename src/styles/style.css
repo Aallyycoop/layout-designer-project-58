@@ -30,6 +30,10 @@
   font-weight: 400;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "OpenSans", sans-serif;
   font-weight: 400;
@@ -53,11 +57,26 @@ h2 {
   font-weight: 400;
   font-size: 60px;
   line-height: 1.2em;
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
   font-size: 34px;
   line-height: 1.2em;
+}
+
+p { 
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fz-52 {
+  font-size: 52px;
 }
 
 .container {
@@ -72,13 +91,24 @@ h3 {
   margin: 0 auto;
 }
 
-
 .center {
   text-align: center;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pt-200 {
+  padding-top: 200px;
 }
 
 /* Background */
@@ -116,6 +146,36 @@ h3 {
   color: var(--dark);
 }
 
+.color-white {
+  color: var(--white);
+}
+
+/* Container */
+
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+.d-flex {
+  display: flex;
+  padding-top: 0;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header */
 
 .header-image {
@@ -129,19 +189,6 @@ h3 {
   margin-bottom: 150px;
 }
 
-.flex {
-  display: flex;
-  gap: 30px;
-}
-
-.flex-col-2 {
-  justify-content: center;
-  align-items: center;
-
-  width: 50%;
-  gap: 30px;
-}
-
 .btn {
   display: inline-block;
 
@@ -150,7 +197,6 @@ h3 {
   font-weight: 700;
 
   text-transform: uppercase;
-  text-decoration: none;
   border: none;
   padding: 12px 24px;
   margin-top: 24px;
@@ -164,4 +210,49 @@ h3 {
   position: relative;
   margin: 0 auto -200px;
   z-index: 1;
+}
+
+/* Navigation section */
+
+.split-columns-3 > * {
+  width: calc((100% - 60px) / 3);
+}
+
+.card-nav {
+  display: block;
+
+  background-color: var(--light);
+
+  height: 100%;
+  padding: 24px;
+}
+
+.card-nav:hover {
+  background-color: var(--main);
+}
+
+.card-head-number {
+  margin-bottom: 40px;
+  margin-top: 0;
+
+  font-family: "Neucha", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1;
+
+  color: var(--main-dark)
+}
+
+.card-title {
+  font-family: "Neucha", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.card-body {
+  color: var(--dark)
+}
+
+.card-nav:hover * {
+  color: var(--white);
 }
