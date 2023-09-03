@@ -36,6 +36,8 @@ body {
   color: var(--dark);
   font-size: 16px;
   line-height: 1.6rem;
+
+  margin: 0;
   
 }
 
@@ -47,6 +49,8 @@ h1 {
 }
 
 h2 {
+  font-family: "Neucha", sans-serif;
+  font-weight: 400;
   font-size: 60px;
   line-height: 1.2em;
 }
@@ -58,10 +62,26 @@ h3 {
 
 .container {
   position: relative;
+  width: 100%;
+}
+
+.content {
+  position: relative;
   max-width: 1110px;
   padding: 100px 0;
   margin: 0 auto;
 }
+
+
+.center {
+  text-align: center;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/* Background */
 
 .bg-image::before {
   position: absolute;
@@ -78,6 +98,14 @@ h3 {
 
 .bg-light {
   background-color: var(--light);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-main-dark {
+  background-color: var(--main-dark);
 }
 
 .color-main {
@@ -126,4 +154,14 @@ h3 {
   border: none;
   padding: 12px 24px;
   margin-top: 24px;
+}
+
+/* Video section */
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+
+  position: relative;
+  margin: 0 auto -200px;
+  z-index: 1;
 }
