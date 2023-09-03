@@ -66,6 +66,14 @@ h3 {
   line-height: 1.2em;
 }
 
+h5 {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
 p { 
   margin: 0;
   padding: 0;
@@ -103,15 +111,27 @@ a {
   margin-bottom: 30px;
 }
 
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
 .pt-100 {
   padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
 }
 
 .pt-200 {
   padding-top: 200px;
 }
 
-/* Background */
+/* Background and color*/
 
 .bg-image::before {
   position: absolute;
@@ -138,6 +158,10 @@ a {
   background-color: var(--main-dark);
 }
 
+.bg-brown {
+  background-color: var(--brown);
+}
+
 .color-main {
   color: var(--main);
 }
@@ -148,6 +172,10 @@ a {
 
 .color-white {
   color: var(--white);
+}
+
+.color-translucent-dark {
+  color: var(--translucent-dark);
 }
 
 /* Container */
@@ -171,12 +199,15 @@ a {
 }
 
 .flex-col {
-
   justify-content: center;
   align-items: center;
 }
 
 /* Header */
+
+.split-columns-2 > * {
+  width: calc(50% - 15px);
+}
 
 .header-image {
   position: absolute;
@@ -255,4 +286,32 @@ a {
 
 .card-nav:hover * {
   color: var(--white);
+}
+
+/* Sections */
+
+.sections-image {
+
+  vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.small-header {
+  font-family: "Neucha", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.section-text {
+  font-family: "Neucha", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.2em;
+
+  padding-top: 30px;
+}
+
+.separate-header {
+  padding: 5px 10px;
+  margin-top: 0;
 }
