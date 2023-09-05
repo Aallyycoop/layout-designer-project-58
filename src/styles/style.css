@@ -179,6 +179,10 @@ a {
   color: var(--translucent-dark);
 }
 
+.color-translucent-white {
+  color: var(--translucent-white);
+}
+
 .color-brown {
   color: var(--brown);
 }
