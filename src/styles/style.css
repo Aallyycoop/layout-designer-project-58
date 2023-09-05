@@ -65,6 +65,7 @@ h2 {
 h3 {
   font-size: 34px;
   line-height: 1.2em;
+  margin-bottom: 16px;
 }
 
 h5 {
@@ -75,10 +76,10 @@ h5 {
   text-transform: uppercase;
 }
 
-p { 
+/* p { 
   margin: 0;
   padding: 0;
-}
+} */
 
 a {
   text-decoration: none;
@@ -104,6 +105,10 @@ a {
   text-align: center;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -114,6 +119,10 @@ a {
 
 .mb-100 {
   margin-bottom: 100px;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 .pl-30 {
