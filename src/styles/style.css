@@ -63,9 +63,11 @@ h2 {
 }
 
 h3 {
+  font-family: "Neucha", sans-serif;
   font-size: 34px;
   line-height: 1.2em;
   margin-bottom: 16px;
+  font-weight: 400;
 }
 
 h5 {
@@ -75,11 +77,6 @@ h5 {
   line-height: 1.2em;
   text-transform: uppercase;
 }
-
-/* p { 
-  margin: 0;
-  padding: 0;
-} */
 
 a {
   text-decoration: none;
@@ -117,8 +114,16 @@ a {
   margin-bottom: 30px;
 }
 
+.mb-60 {
+  margin-bottom: 60px;
+}
+
 .mb-100 {
   margin-bottom: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
 
 .p-0 {
@@ -225,6 +230,10 @@ a {
   align-items: center;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 /* Header */
 
 .split-columns-2 > * {
@@ -296,12 +305,6 @@ a {
   color: var(--main-dark)
 }
 
-.card-title {
-  font-family: "Neucha", sans-serif;
-  font-weight: 400;
-  font-size: 34px;
-}
-
 .card-body {
   color: var(--dark)
 }
@@ -336,4 +339,74 @@ a {
 .separate-header {
   padding: 5px 10px;
   margin-top: 0;
+}
+
+/* Footer */
+
+.subscribe {
+  padding: 40px 55px;
+}
+
+.subscribe-form-label {
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.subscribe-form-input {
+  height: 50px;
+  width: calc(100% - 75px);
+  padding: 15px;
+
+  border: none;
+}
+
+.subscribe-form-rules {
+  font-size: 12px;
+}
+
+.subscribe-form-rules-link {
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.btn-subscribe {
+  position: relative;
+  display: inline-block;
+
+  width: 70px;
+  height: 50px;
+
+  background-color: var(--main);
+  border: none;
+}
+
+.btn-subscribe::before {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  
+  width: 24px;
+  height: 24px;
+
+  transform: translate(-50%, -50%);
+
+  content: url("../images/send.svg");
+}
+
+.btn-subscribe:hover {
+  background-color: var(--main);
+  cursor: pointer;
+}
+
+.info-block-item {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.info-block-link {
+  text-decoration: underline;
+  color: var(--blue);
 }
