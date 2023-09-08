@@ -106,6 +106,10 @@ a {
   margin: 0;
 }
 
+/* .mt-0 {
+  margin-top: 0;
+} */
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -120,6 +124,10 @@ a {
 
 .mb-100 {
   margin-bottom: 100px;
+}
+
+.mb-185 {
+  margin-bottom: 185px;
 }
 
 .mt-100 {
