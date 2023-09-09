@@ -107,9 +107,13 @@ a {
   margin: 0;
 }
 
-/* .mt-0 {
-  margin-top: 0;
-} */
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
 
 .mb-20 {
   margin-bottom: 20px;
@@ -257,7 +261,7 @@ a {
 }
 
 .header-title {
-  margin-bottom: 150px;
+  margin-bottom: 185px;
   margin-top: 0;
 }
 
@@ -271,6 +275,8 @@ a {
   text-transform: uppercase;
   border: none;
   padding: 12px 24px;
+  width: 148px;
+  height: 49px;
   margin-top: 24px;
 }
 
