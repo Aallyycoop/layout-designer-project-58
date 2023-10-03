@@ -43,7 +43,6 @@ body {
   line-height: 1.6rem;
 
   margin: 0;
-  
 }
 
 h1 {
@@ -318,11 +317,11 @@ a {
   font-size: 64px;
   line-height: 1;
 
-  color: var(--main-dark)
+  color: var(--main-dark);
 }
 
 .card-body {
-  color: var(--dark)
+  color: var(--dark);
 }
 
 .card-nav:hover * {
@@ -403,7 +402,6 @@ a {
 
   top: 50%;
   left: 50%;
-  
   width: 24px;
   height: 24px;
 
